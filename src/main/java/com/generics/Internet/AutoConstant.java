@@ -7,4 +7,6 @@ public interface AutoConstant {
   String url_login="http://the-internet.herokuapp.com/login";
   String excel_sheet="./testdata/Binmile_Internet_TestData.xlsx";
   String sheetname_login="Internet_Login";
+  String report="./reports/learn_reports.html";
+
 }

@@ -47,7 +47,7 @@ public class ChallengingDOM
 	  /* ArrayList<WebElement> al=new ArrayList<>(celldata);
 	   System.out.println(al.size());*/
 	   
-	   List<String> list=new ArrayList<>();
+	   List<String> list=new ArrayList<String>();
 	     for(int i=0;i<celldata.size();i++) {
 		   list.add(celldata.get(i).getText());
 	     }

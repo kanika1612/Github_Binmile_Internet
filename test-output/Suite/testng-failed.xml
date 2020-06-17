@@ -3,8 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.scripts.Internet.TESTLoginLogoutInternet">
+        <methods>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.scripts.Internet.TESTLoginLogoutInternet -->
       <class name="com.scripts.Internet.TESTChallengingDOMInternet">
         <methods>
+          <include name="closeBrowser"/>
           <include name="dom"/>
           <include name="openBrowser"/>
         </methods>

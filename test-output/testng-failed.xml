@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.scripts.Internet.TESTLoginLogoutInternet">
+        <methods>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.scripts.Internet.TESTLoginLogoutInternet -->
       <class name="com.scripts.Internet.TESTChallengingDOMInternet">
         <methods>
-          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
           <include name="dom"/>
+          <include name="openBrowser"/>
         </methods>
       </class> <!-- com.scripts.Internet.TESTChallengingDOMInternet -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

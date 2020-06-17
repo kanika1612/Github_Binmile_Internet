@@ -1,23 +1,25 @@
 package com.scripts.Internet;
 
 import java.io.IOException;
-
 import org.testng.annotations.Test;
-
 import com.generics.Internet.BaseTest;
 import com.pom.Internet.InternetLogin;
 import com.pom.Internet.InternetLogout;
 
-
-public class TESTLoginLogoutInternet extends BaseTest {
+public class TESTLoginLogoutInternet extends BaseTest 
+{
+	
 	@Test
-	public void loginVerfy() {
+	public void loginVerify() {
+		driver.get(url_login);
 		InternetLogin logintitle=new InternetLogin(driver);
 		logintitle.loginTitleMethod();
 		logintitle.loginUrlMethod();
+		
 	}
 	@Test(priority=1)
 	public void invalidLogin() throws IOException, InterruptedException {
+		
 		InternetLogin invalidlogin=new InternetLogin(driver);
 		invalidlogin.invalidLoginMethod();
 	}

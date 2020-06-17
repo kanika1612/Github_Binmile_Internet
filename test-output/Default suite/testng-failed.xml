@@ -5,8 +5,9 @@
     <classes>
       <class name="com.scripts.Internet.TESTChallengingDOMInternet">
         <methods>
-          <include name="openBrowser"/>
+          <include name="home"/>
           <include name="dom"/>
+          <include name="openBrowser"/>
         </methods>
       </class> <!-- com.scripts.Internet.TESTChallengingDOMInternet -->
     </classes>

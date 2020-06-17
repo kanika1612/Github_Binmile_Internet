@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 import com.generics.Internet.AutoConstant;
 import com.generics.Internet.BasePage;
 import com.generics.Internet.ExcelLibrary;
@@ -15,7 +16,8 @@ import com.generics.Internet.ExcelLibrary;
 public class InternetLogin extends BasePage implements AutoConstant {
 	
 	public WebDriver driver;
-   
+	
+	
 	@FindBy(id="username")
 	private WebElement usernameTextField;
 	
@@ -36,6 +38,7 @@ public class InternetLogin extends BasePage implements AutoConstant {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	public void loginTitleMethod() {
 		fetchTitleMethod(driver);
 	}
@@ -55,7 +58,7 @@ public class InternetLogin extends BasePage implements AutoConstant {
 	
 	//with valid credentials
 	public void loginMethod() throws IOException, InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		usernameTextField.sendKeys(ExcelLibrary.getCellvalue(excel_sheet, sheetname_login, 1, 0));
 		Thread.sleep(2000);
 		passwordPasswordField.sendKeys(ExcelLibrary.getCellvalue(excel_sheet, sheetname_login, 1, 1));

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class BasePage   {
 	
 	//Select class
@@ -39,5 +40,6 @@ public class BasePage   {
 	 {
 		 String loginUrl=driver.getCurrentUrl();
 		 System.out.println("Url of Login Page:- "+loginUrl);
-	 }	 
-}
+	 }	
+	
+} 
